@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 import "./iterable_mapping.sol";
 
 
-contract TestMapping {
+contract DemoMapping {
 
     //  生成对应函数
     mapping(address => uint) public balances;
@@ -12,9 +12,9 @@ contract TestMapping {
         balances[msg.sender] = newBalance;
     }
 
-    function test() {
-       mapping(address => uint) a;
-    }
+    // function test() {
+    //   mapping(address => uint) a;
+    // }
 
     IterableMapping.itmap data;
 
@@ -32,4 +32,7 @@ contract TestMapping {
             s += value;
         }
     }
+    
+    
+    //https://github.com/ethereum/dapp-bin/blob/master/library/iterable_mapping.sol
 }

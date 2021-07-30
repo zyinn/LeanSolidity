@@ -1,20 +1,19 @@
+pragma solidity >=0.4.24 <0.8.6;
 
-pragma solidity ^0.4.24;
+import "https://github.com/Arachnid/solidity-stringutils/blob/master/src/strings.sol";
 
-import "github.com/Arachnid/solidity-stringutils/strings.sol";
+contract DemoString {
 
-contract testStr {
-
-    string public str1 = "登链学院";
+    string public str1 = "新颜科技";
 
     // https://www.qqxiuzi.cn/bianma/Unicode-UTF.php
-    bytes public bs1 = "登链学院";
+    bytes public bs1 = "新颜科技";
 
-        // utf 编码长度
+        // utf8 编码长度
     function getLen() public view returns (uint) {
         return bytes(str1).length;
     }
-
+    // E696B0 E9A29C E7A791 E68A80
     function getbyte(uint i) public view returns (byte) {
         return bytes(str1)[i];
     }

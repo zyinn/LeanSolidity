@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-contract testCast {
+contract DemoCast {
 
     function add() public pure returns (uint) {
         uint8 i = 10;
